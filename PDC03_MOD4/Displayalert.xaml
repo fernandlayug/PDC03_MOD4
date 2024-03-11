@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD4.Displayalert">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Display Alert"
+                />
+            <Button Text="DisplayAlert" Clicked="OnALert"/>
+            <Button Text="DisplayAlert" Clicked="OnALertOption"/>
+
+            <Button Text="ActionSheet Simple" Clicked="OnActionSheetSimpleClicked" />
+            <Button Text="ActionSheet Cancel/Delete" Clicked="OnActionSheetCancelDeleteClicked" />
+
+            <Label Text="Display Prompt"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+            <Button Text="Question 1"
+                Clicked="OnQuestion1ButtonClicked" />
+            <Label x:Name="question1ResultLabel" />
+            <Button Text="Question 2"
+                Clicked="OnQuestion2ButtonClicked" />
+            <Label x:Name="question2ResultLabel" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

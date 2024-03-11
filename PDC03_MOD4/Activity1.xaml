@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD4.Activity1">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView SelectedItem="Item List 3">
+                
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Item List 1</x:String>
+                        <x:String>Item List 2</x:String>
+                        <x:String>Item List 3</x:String>
+                        <x:String>Item List 4</x:String>
+                        <x:String>Item List 5</x:String>
+                        <x:String>Item List 6</x:String>
+                        <x:String>Item List 7</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

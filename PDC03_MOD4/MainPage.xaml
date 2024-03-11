@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD4.MainPage">
+
+    <StackLayout>
+        <Button Text="Activity 1 - Listview" Clicked="Activity01Page"/>
+        <Button Text="Activity 2a - Listview Data Binding TextCell" Clicked="Activity02Page"/>
+        <Button Text="Activity 2b - Listview Data Binding ImageCell" Clicked="Activity02bPage"/>
+        <Button Text="Activity 2c - Listview Data Binding SwitchCell" Clicked="Activity02cPage"/>
+        <Button Text="Activity 2d - Listview Data Binding EntryCell" Clicked="Activity02dPage"/>
+        <Button Text="Activity 3 - Collection View" Clicked="Activity03Page"/>
+        <Button Text="Activity 4 - Navigation" Clicked="Activity04Page"/>
+        <Button Text="Activity 5- Navigation" Clicked="Activity05Page"/>
+        <Button Text="DisplayAlert" Clicked="Activity06Page"/>
+
+    </StackLayout>
+
+</ContentPage>

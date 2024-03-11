@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD4.Activity2">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <StackLayout>
+                <ListView x:Name="EmployeeView"
+                  ItemsSource="{Binding Employees}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                        
+                                <ImageCell ImageSource="{Binding Image}" Text="{Binding DisplayName}" TextColor="Black" Detail="{Binding Position}" DetailColor="Red">
+                                    <ImageCell.ContextActions>
+                                        <MenuItem Text="Edit" Clicked="MenuEdit"/>
+                                        <MenuItem Text="Delete" Clicked="MenuDelete"/>
+                                    </ImageCell.ContextActions>
+                                </ImageCell>
+                       
+                          
+                      
+                            <!--<ImageCell ImageSource="{Binding Image}" Text="{Binding DisplayName}" TextColor="Black" Detail="{Binding Position}" DetailColor="Red"/>-->
+                            <!--<ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Add" Clicked="MenuAdd"/>
+                                    <MenuItem Text="Edit" Clicked="MenuEdit"/>
+                                    <MenuItem Text="Delete" Clicked="MenuDelete"/>
+                                </ViewCell.ContextActions>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    --><!--<Label Grid.Column="1" HorizontalOptions="Start" Text="{Binding DisplayName}" TextColor="Black"/>-->
+                               
+                                    
+                                    <!--<ImageCell ImageSource="{Binding Image}" Text="{Binding DisplayName}" TextColor="Black" Detail="{Binding Position}" DetailColor="Red"/>--><!--
+                                </Grid>
+                            </ViewCell>-->
+
+
+
+                            <!--<TextCell Text="{Binding DisplayName}" TextColor="Black" Detail="{Binding Position}" DetailColor="Red">
+                                <TextCell.ContextActions>
+                                    <MenuItem Text="Edit"/>
+                                    <MenuItem Text="Delete"/>
+                                </TextCell.ContextActions>
+                            </TextCell>-->
+
+                            <!--<SwitchCell Text="{Binding DisplayName}"/>-->
+                            <!--<EntryCell/>-->
+
+
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <StackLayout>
+                <!--<StackLayout>
+                    <TableView Intent="Form">
+                        <TableRoot>
+                            <TableSection Title="User Information">
+                                <EntryCell Label="First Name" Placeholder="Enter your first name" />
+                                <EntryCell Label="Last Name" Placeholder="Enter your last name" />
+                                <EntryCell Label="Email" Placeholder="Enter your email address" />
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>-->
+                <!--</StackLayout>-->
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
